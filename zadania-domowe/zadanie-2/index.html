@@ -1,10 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p>Zadanie 2</p>
+
+    <div>
+        <form action="https://formspree.io/l.badocha@arena108.pl" method="post">
+
+        <label for="name">Imię</label>
+        <input type="text" name="name" id="name">
+
+        <br>
+
+        <label for="lastname">Nazwisko</label>
+        <input type="text" name="lastname" id="lastname">
+
+        <br>
+
+        <label for="email">Email</label>
+        <input type="mail" name="email" id="email">
+
+        <br>
+
+        <label for="phone">Phone number</label>
+        <input type="phone" name="phone" id="phone">
+
+        <br>
+
+        <label for="miasto">Wybierz miasto</label>
+        <select name="miasto" id="miasto">
+            <option value="Gdansk">Gdansk</option>
+            <option value="krakow">Krakow</option>
+            <option value="warszawa">Warszawa</option>
+        </select>
+        
+        <br>
+        
+        <p>Wybierz plec</p>
+        <input type="radio" value="plec" name="plec" id="female"><label for="female">Kobieta</label>
+        <br>
+        <input type="radio" value="plec" name="plec" id="male"><label for="male">Mezczyzna</label>
+        
+        <br><br>
+        
+        <input type="checkbox" name="checkbox" id="agreement">
+        <label for="agreement">Wyrażam zgodę o przetwarzanie</label>
+        
+        <br><br>
+        
+        <label for="message">Twoja wiadomosc</label>
+        <textarea name="message" id="message"></textarea>
+        
+        <br>
+        
+        <input type="submit" value="Send">
+        
+    </form>
+    </div>
+
 </body>
+
 </html>
