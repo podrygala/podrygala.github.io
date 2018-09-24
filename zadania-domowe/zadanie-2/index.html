@@ -10,57 +10,58 @@
 <body>
 
     <div>
-        <form action="https://formspree.io/l.badocha@arena108.pl" method="post">
+        <form action="https://formspree.io/podrygala@cic.com" method="post">
 
-        <label for="name">Imię</label>
-        <input type="text" name="name" id="name">
+            <label for="name">Imie</label>
+            <input type="text" name="name" id="name" required>
 
-        <br>
+            <br>
 
-        <label for="lastname">Nazwisko</label>
-        <input type="text" name="lastname" id="lastname">
+            <label for="lastname">Nazwisko</label>
+            <input type="text" name="lastname" id="lastname" required>
 
-        <br>
+            <br>
 
-        <label for="email">Email</label>
-        <input type="mail" name="email" id="email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
 
-        <br>
+            <br>
 
-        <label for="phone">Phone number</label>
-        <input type="phone" name="phone" id="phone">
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone">
 
-        <br>
+            <br>
 
-        <label for="miasto">Wybierz miasto</label>
-        <select name="miasto" id="miasto">
-            <option value="Gdansk">Gdansk</option>
-            <option value="krakow">Krakow</option>
-            <option value="warszawa">Warszawa</option>
-        </select>
-        
-        <br>
-        
-        <p>Wybierz plec</p>
-        <input type="radio" value="plec" name="plec" id="female"><label for="female">Kobieta</label>
-        <br>
-        <input type="radio" value="plec" name="plec" id="male"><label for="male">Mezczyzna</label>
-        
-        <br><br>
-        
-        <input type="checkbox" name="checkbox" id="agreement">
-        <label for="agreement">Wyrażam zgodę o przetwarzanie</label>
-        
-        <br><br>
-        
-        <label for="message">Twoja wiadomosc</label>
-        <textarea name="message" id="message"></textarea>
-        
-        <br>
-        
-        <input type="submit" value="Send">
-        
-    </form>
+            <label for="miasto">Wybierz miasto</label>
+            <select name="miasto" id="miasto" required>
+                <option value="">Wybierz</option>
+                <option value="Gdansk">Gdansk</option>
+                <option value="krakow">Krakow</option>
+                <option value="warszawa">Warszawa</option>
+            </select>
+
+            <br>
+
+            <p>Wybierz plec</p>
+            <input type="radio" value="plec" name="plec" id="female" required><label for="female">Kobieta</label>
+            <br>
+            <input type="radio" value="plec" name="plec" id="male"><label for="male">Mezczyzna</label>
+
+            <br><br>
+
+            <input type="checkbox" name="checkbox" id="agreement" required>
+            <label for="agreement">Wyrażam zgodę o przetwarzanie</label>
+
+            <br><br>
+
+            <label for="message">Twoja wiadomosc</label>
+            <textarea name="message" id="message"></textarea>
+
+            <br>
+
+            <input type="submit" value="Send">
+
+        </form>
     </div>
 
 </body>

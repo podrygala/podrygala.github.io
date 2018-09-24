@@ -1,5 +1,7 @@
 body {
     background-color: #BEEB9F;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 form {
@@ -17,9 +19,9 @@ label {
     display: block;
 }
 
-form input[type="text"], 
-form input[type="mail"], 
-form input[type="phone"],
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
 form select {
     border: none;
     width: 300px;
@@ -31,6 +33,11 @@ form textarea {
     width: 300px;
     height: 200px;
     margin: 10px 0;
+    border: none;
+}
+
+form input[type="radio"] {
+    margin-bottom: 10px;
 }
 
 label[for="male"],
@@ -38,5 +45,30 @@ label[for="female"],
 label[for="agreement"] {
     display: inline;
     padding: 10px;
-    margin: 10px 0;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border: 1px solid #FFFF9D;
+    outline: none;
+    background-color: #BEEB9F;
+}
+
+input[type="submit"] {
+    background-color: #FF6138;
+    width: 100px;
+    height: 40px;
+    box-shadow: 12px grey;
+    color: white;
+    border: none;
+    position: absolute;
+    left: 225px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #FF8538;
 }
