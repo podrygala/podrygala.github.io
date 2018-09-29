@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>12075</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>A Simple Form</h1>
+    <h2>Form Fundamentals</h2>
+
+    <form action="" method="post" autocomplete="on">
+        <fieldset>
+           <legend>Customer Info</legend>
+            <div class="customer">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" autofocus placeholder="eg. Katarzyna">
+
+                <br><br>
+
+                <label for="phone">Telephone:</label>
+                <input type="tel" name="phone" id="phone" 
+                       placeholder="1-234-567-8910"
+                       pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                       required>
+
+                <br><br>
+
+                <label for="email">Email address:</label>
+                <input type="email" name="email" id="email"required placeholder="eg.katarzyna@gmail.com, john@wp.pl" multiple>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+           <legend>Books</legend>
+            <div class="books">
+                <input type="text" name="name" id="name">
+                <label for="quantity">Quantity (Maximum 5):</label>
+                <select value="quantity" id="quantity">
+                    <option>choose</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

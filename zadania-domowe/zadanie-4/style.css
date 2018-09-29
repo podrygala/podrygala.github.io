@@ -1,0 +1,41 @@
+body {
+    background-color: grey;
+}
+
+.main {
+    background-color: #DD7F7C;
+    width: 800px;
+    height: 1000px;
+    position: relative;
+    border: 5px solid white;
+}
+
+.one, .two, .three, .four {
+    width: 200px;
+    height: 200px;
+    background-color: #855B70;
+    position: absolute
+}
+
+.dot-one, .dot-two, .dot-three, .dot-four {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #9A8A91;
+    position: absolute;
+}
+
+.two, .dot-four {
+    bottom: 0;
+}
+
+.three, .dot-one  {
+    bottom: 0;
+    right: 0;
+}
+
+.four, .dot-two {
+    top: 0;
+    right: 0;
+}
+
