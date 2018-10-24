@@ -1,0 +1,36 @@
+p {
+    text-align: center;
+    color: #d4d4d4;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.title:before {
+    content: "";
+    width: 20%;
+    height: 1px;
+    border-bottom: 1px solid #f0f0f0;
+    position: absolute;
+    bottom: 90%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.fab {
+    text-align: center;
+    font-size: 50px;
+    color:orange;
+}
+
+.fa-circle {
+    color: #f0f0f0;
+
+}
+
+sub {
+    font-size: 18px;
+}
