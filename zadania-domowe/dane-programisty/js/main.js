@@ -7,7 +7,7 @@ $('#get').on('click', function () {
     $.getJSON(url, function (response) {
 
         let html = `<hr>imię: ${response.imie} <hr>nazwisko: ${response.nazwisko}<hr>zawod: ${response.zawod}<hr><hr>firma: ${response.firma}<hr>`;
-        $(".dane-programisty").append(html);
+        $(".dane-programisty").html(html);
 
     });
 })
